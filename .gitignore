@@ -1,0 +1,68 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+*/__pycache__/*
+
+# Environment
+env/
+.env
+.venv
+venv/
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Custom files
+
+# all media files should be excluded, unless indicated otherwise
+*.mp4
+*.jpg
+*.png
+*.avi
+*.npy
+*.csv
+*.json
+*.ply
+*.zip
+*.wav
+*.yaml
+
+# gcs credentials
+credentials/*.json
+
+# datasets 
+datasets/*
+pose_analytics/annotations/*
+preprocessing/data
+surgery_hernia_train_test/RALIHR_*
+surgery_hernia_train_test/RALVHR_*
+Suturing_*
+HAMLYN/*
+Cholec*
+
+# models
+*.pt
+*.pth
+core
+
+# pickles
+*.pkl
+*.tar
+
+# wandb
+wandb/
+
+# trans-sv logs
+runs/
+
+# slurm outputs
+*.out
+hamlyn_data.zip
+datasets/SurgPose/*.tar.gz
+encord-public_encord_key-private-key.ed25519

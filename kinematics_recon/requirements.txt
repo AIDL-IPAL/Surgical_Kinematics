@@ -1,0 +1,28 @@
+# --- Jupyter / viz (optional, ok with NumPy 2) ---
+ipympl>=0.9
+ipywidgets>=8.1
+nbformat>=5.9
+matplotlib>=3.8
+
+# --- Core scientific, NumPy 2.x compatible ---
+numpy>=2.0,<2.4
+pandas>=2.2.3
+numexpr>=2.10.0
+bottleneck>=1.4.0
+opencv-python>=4.10.0
+tqdm
+PyYAML
+
+# --- Vision / tracking ---
+ultralytics>=8.2.0
+supervision>=0.25.1
+trackers>=2.0.1
+filterpy>=1.4
+
+# --- PyTorch CUDA 12.6 (Windows) ---
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.6.0+cu126
+torchvision==0.21.0+cu126
+
+# install guide
+# conda ``create -n pose_analytics python=3.11 -y

@@ -1,0 +1,34 @@
+# ---------- base scientific stack ----------
+numpy
+scipy
+matplotlib
+pandas
+scikit-learn
+opencv-python
+pyopengl
+pyqt5
+open3d
+omegaconf
+imageio
+gdown
+sounddevice
+
+# ---------- PyTorch ecosystem (Torch 2.4.1, CUDA 12.4) ----------
+--index-url https://download.pytorch.org/whl/cu124
+
+torch==2.4.1+cu124
+torchvision==0.19.1+cu124
+torchaudio==2.4.1+cu124
+xformers==0.0.28.post1     # compatible with torch 2.4.1
+
+# required by xformers / timm / mmcv
+timm
+mmengine
+mmcv==2.1.0
+
+
+# Installation Guide
+# python3 -m venv ~/venvs/base
+# source ~/venvs/base/bin/activate
+# pip install --upgrade pip
+# pip install -r scene3d/requirements.txt
