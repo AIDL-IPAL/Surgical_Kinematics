@@ -5,7 +5,9 @@ Our repository is organized into multiple directories for different aspects of r
 ## Scene Reconstruction & Pose Analytics Pipeline
 Our scene reconstruction and pose analytics pipeline follows these key stages:
 
-1. **YOLO-pose Pretraining / Finetuning**: Initial model training using the SurgPose dataset to establish foundational pose recognition capabilities. Further refinement of the pretrained model using SurgVU dataset pose annotations (Northwell Physicians Group, Encord. Contact liam.mchugh@columbia.edu) for domain-specific adaptation.
+1. **YOLO-pose Finetuning**: Initial model training using the SurgPose dataset to establish foundational pose recognition capabilities. Further refinement of the pretrained model using SurgVU dataset pose annotations (Northwell Physicians Group, Encord. Contact liam.mchugh@columbia.edu) for domain-specific adaptation.
+
+2. **Monocular Depth Finetuning***: Using calibrated Stereo-Vision inference as annotations, Metric3D can be finetuned for laparoscopic surgery, improving the performance of depth-integrated kinematics reconstruction on monocular video datasets. Code for finetuning & depth inference (both monocular using Metric3D and stereo using NVLabs FoundationStereo) can be found in the depth_recon subdirectory.
 
 3. **Kinematic Inference**:
    - **Core Pose Detection**: Extraction of key instrument positions and orientations
